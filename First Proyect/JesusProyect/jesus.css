@@ -5,8 +5,17 @@
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 500;
 }
+@keyframes background {
+    0%{background: #000;}
+    25%{background: #333;}
+    50%{background: #535151;}
+    75%{background: #6d6a6a;}
+    100%{background: #ccc;}
+}
 body{
-    background-color: #ccc;
+    width: 100%;
+    height: 100%;
+    animation: background 5s infinite;
 }
 .cont{
     margin: 6em auto;
