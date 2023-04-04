@@ -1,3 +1,227 @@
-h1{
-    color: brown;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: #EBEFF2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 85vw;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "n1 n1 n2 n3"
+    "n4 n5 n5 n3";
+    gap: 30px;
+}
+
+.cards-us{
+    border-radius: 7px;
+    color: white;
+    box-shadow: 50px 60px 100px -80px #3F4656;
+}
+
+header{
+    display: flex;
+    align-items: center;
+}
+
+header img{
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/* Estilos de la carta n1 */
+.card1{
+    position: relative;
+    padding: 30px;
+    background: #683FBF;
+    grid-area: n1;
+    z-index: 10;
+}
+
+#comillas{
+    height: 40%;
+    position: absolute;
+    top: 0%;
+    right: 15%;
+    z-index: -1;
+}
+
+.card1 header img{
+    border: 2px solid #9D7DC0;
+}
+
+.card1__contain-nom{
+    font-size: 50%;
+}
+
+.card1__contain-nom p{
+    margin-top: 3px;
+    color: #B48DEF;
+}
+
+.card1__contain-leg{
+    font-size: 77%;
+}
+
+.card1__contain-leg h2{
+    margin: 20px 0;
+}
+
+.card1__contain-leg p{
+    color: #B48DEF;
+}
+
+/* Estilos de la carta n2 */
+.card2{
+    background: #4F5F73;
+    grid-area: n2;
+    padding: 20px 30px 30px 30px;
+}
+
+.card2 header img{
+    border: 2px solid #838C9B;
+}
+
+.card2__contain-nom{
+    font-size: 45%;
+}
+
+.card2__contain-nom p{
+    color: #9BA2B4;
+    margin-top: 5px;
+}
+
+.card2__contain-leg{
+    font-size: 70%;
+}
+
+.card2__contain-leg h2{
+    margin: 20px 0;
+}
+
+.card2__contain-leg p{
+    color: #9BA2B4;
+}
+
+/* Estilos de la  carta n3 */
+.card3{
+    background: white;
+    grid-area: n3;
+    color: #3F4656;
+    padding: 30px;
+}
+
+.card3 header img{
+    border: 2px solid #3F4656;
+}
+
+.card3-4__contain-nom{
+    font-size: 55%;
+}
+
+.card3-4__contain-nom p{
+    margin-top: 3px;
+    color: #A4A8AC;
+}
+
+.card3__contain-leg{
+    font-size: 80%;
+}
+
+.card3__contain-leg h2{
+    margin: 30px 0;
+}
+
+/* Estilos de la carta n4 */
+.card4{
+    background: white;
+    grid-area: n4;
+    color: #3F4656;
+    padding: 30px;
+}
+
+.card4 header img{
+    border: 2px solid #3F4656;
+}
+
+.card4__contain-leg{
+    font-size: 75%;
+}
+
+.card4__contain-leg h2{
+    margin: 30px 0;
+}
+
+/* Estilos de la carta n5 */
+.card5{
+    background: #151C26;
+    grid-area: n5;
+    padding: 30px;
+}
+
+.card5 header img{
+    border: 2px solid #9D7DC0;
+}
+
+.card5__contain-nom{
+    font-size: 45%;
+}
+
+.card5__contain-nom p{
+    margin-top: 3px;
+    color: #676D78;
+}
+
+.card5__contain-leg{
+    font-size: 80%;
+}
+
+.card5__contain-leg h2{
+    margin: 25px 0;
+}
+
+.card5__contain-leg p{
+    color: #676D78;
+}
+
+@media (max-width: 1024px){
+    .card{
+        scale: .8;
+        width: 100vw;
+    }
+}
+
+@media (max-width: 768px){
+    .card{
+        scale: .7;
+        height: 868px;
+        width: 1000px;
+    }
+}
+
+@media (max-width: 655px){
+    .card{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: scroll;
+    }
+    .cards-us{
+        flex: 1 0 auto;
+        margin: 0 20px;
+        width: 300px;
+        height: 400px;
+    }
 }
