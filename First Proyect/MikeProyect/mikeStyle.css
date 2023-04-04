@@ -31,12 +31,12 @@ body{
     box-shadow: 50px 60px 100px -80px #3F4656;
 }
 
-header{
+.header{
     display: flex;
     align-items: center;
 }
 
-header img{
+.header img{
     height: 30px;
     border-radius: 50%;
     margin-right: 20px;
@@ -59,7 +59,7 @@ header img{
     z-index: -1;
 }
 
-.card1 header img{
+.card1 .header img{
     border: 2px solid #9D7DC0;
 }
 
@@ -91,7 +91,7 @@ header img{
     padding: 20px 30px 30px 30px;
 }
 
-.card2 header img{
+.card2 .header img{
     border: 2px solid #838C9B;
 }
 
@@ -124,7 +124,7 @@ header img{
     padding: 30px;
 }
 
-.card3 header img{
+.card3 .header img{
     border: 2px solid #3F4656;
 }
 
@@ -153,7 +153,7 @@ header img{
     padding: 30px;
 }
 
-.card4 header img{
+.card4 .header img{
     border: 2px solid #3F4656;
 }
 
@@ -172,7 +172,7 @@ header img{
     padding: 30px;
 }
 
-.card5 header img{
+.card5 .header img{
     border: 2px solid #9D7DC0;
 }
 
