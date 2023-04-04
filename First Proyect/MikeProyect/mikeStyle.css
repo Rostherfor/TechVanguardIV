@@ -206,14 +206,6 @@ header img{
 
 @media (max-width: 768px){
     .card{
-        scale: .7;
-        height: 868px;
-        width: 1000px;
-    }
-}
-
-@media (max-width: 655px){
-    .card{
         display: flex;
         flex-wrap: nowrap;
         overflow: scroll;
