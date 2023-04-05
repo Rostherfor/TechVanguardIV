@@ -18,7 +18,7 @@ body{
     animation: background 5s infinite;
 }
 .cont{
-    margin: 5em auto;
+    margin: 6em auto;
     display: grid;
     width: 63em;
     height: 38em;
@@ -110,22 +110,11 @@ body{
 .card.jeanette .no-bold, .card.kira .no-bold{
     color: hsla(210, 19%, 58%, 0.897);
 }
-.attribution { 
-    font-size: 13px;
-    text-align: center;
-    color: hsl(0, 0%, 100%);
-    margin: .6em auto;
-    padding: .9em;
-}
-.attribution a { 
-    color: hsl(0, 100%, 50%); 
-}
-@media screen and (max-width:425px){
+@media screen and (max-width:932px){
     .cont{
         display: flex;
         flex-direction: column;
         width: 22em;
-        height: auto;
         align-items: center;
         margin: 1em auto;
     }
