@@ -163,16 +163,18 @@ background: linear-gradient(74deg, rgba(0,69,88,1) 0%, rgba(0,109,126,1) 95%);
   transition: all 0.2s ease-in;
 }
         .header {
+          flex-direction: column;
+          justify-content: space-between;
             align-items: center;
             justify-content: center;
-            padding: 20px 0;
+            padding: 20px 0px;
         }
         .container {
             display: grid; 
             grid-auto-columns: 1fr; 
             grid-template-columns: 1fr; 
             grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
-            gap: 20px 20px; 
+            gap: 0px 20px; 
             grid-template-areas: 
               "item1"
               "item2"
@@ -184,8 +186,8 @@ background: linear-gradient(74deg, rgba(0,69,88,1) 0%, rgba(0,109,126,1) 95%);
           .item1 { 
             border-radius: 20px;
             grid-area: item1;
-            width: 400px;
-            height: 290px;
+            width: 330px;
+            height: 340px;
          
         }
         
@@ -193,15 +195,15 @@ background: linear-gradient(74deg, rgba(0,69,88,1) 0%, rgba(0,109,126,1) 95%);
           .item2 {
             border-radius: 20px;
             grid-area: item2;
-            width: 400px;
+            width: 330px;
             height: 286px;
 
             }
           .item3 { 
             border-radius: 20px;
             grid-area: item3;
-            width: 400px;
-            height: 600px;
+            width: 330px;
+            height: 700px;
    
         }
         .item3 img{
@@ -210,21 +212,173 @@ background: linear-gradient(74deg, rgba(0,69,88,1) 0%, rgba(0,109,126,1) 95%);
           .item4 { 
             border-radius: 20px;
             grid-area: item4;
-            width: 400px;
+            width: 330px;
            
-            height: 290px;
+            height: 360px;
 
         }
           .item5 {
             border-radius: 20px;
             grid-area: item5;
-            width: 400px;
-            height: 290px;
+            width: 330px;
+            height: 400px;
 
             }
         
       }
+      @media only screen and (max-width: 408px) {
+           
+        .item1:hover{
+          opacity: 1;
+          transform: translate(0,20%) scale(1.1);
+          z-index: 100;
+          transition: all 0.2s ease-in;
+        }
+        .item2:hover{
+          opacity: 1;
+          transform: translate(0,10%) scale(1.1);
+          z-index: 100;
+          transition: all 0.2s ease-in;
+        }
+        .item3:hover{
+          opacity: 1;
+          transform: translate(0,10%) scale(1.1);
+          z-index: 100;
+          transition: all 0.2s ease-in;
+        }
+        .item4:hover{
+          opacity: 1;
+          transform: translate(0,10%) scale(1.1);
+          z-index: 100;
+          transition: all 0.2s ease-in;
+        }
+        .item5:hover{
+          opacity: 1;
+          transform: translate(0,-20%) scale(1.1);
+          transition: all 0.2s ease-in;
+        }
+                .header {
+                    align-items: center;
+                    justify-content: center;
+                    padding: 10px 0;
+                }
+                .container {
+                    display: grid; 
+                    grid-auto-columns: 1fr; 
+                    grid-template-columns: 1fr; 
+                    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+                    gap: 10px 10px; 
+                    grid-template-areas: 
+                      "item1"
+                      "item2"
+                      "item3"
+                      "item3"
+                      "item4"
+                      "item5"; 
+                  }
+                  .item1 { 
+                    border-radius: 20px;
+                    grid-area: item1;
+                    width: 300px;
+                    height: 370px;
+                 
+                }
+                
+                
+                  .item2 {
+                    border-radius: 20px;
+                    grid-area: item2;
+                    width: 300px;
+                    height: 286px;
+        
+                    }
+                  .item3 { 
+                    border-radius: 20px;
+                    grid-area: item3;
+                    width: 300px;
+                    height: 600px;
+           
+                }
+                .item3 img{
+                width: 400px;
+                }
+                  .item4 { 
+                    border-radius: 20px;
+                    grid-area: item4;
+                    width: 300px;
+                   
+                    height: 310px;
+        
+                }
+                  .item5 {
+                    border-radius: 20px;
+                    grid-area: item5;
+                    width: 300px;
+                    height: 450px;
+        
+                    }
+                
+              }
+              @media only screen and (max-width: 300px){
+                .header {
+                  align-items: center;
+                  justify-content: center;
+                  padding: 1px 0;
+              }
+              .container {
+                  display: grid; 
+                  grid-auto-columns: 1fr; 
+                  grid-template-columns: 1fr; 
+                  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+                  gap: 5px 0; 
+                  grid-template-areas: 
+                    "item1"
+                    "item2"
+                    "item3"
+                    "item3"
+                    "item4"
+                    "item5"; 
+                }
+                .item1 { 
+                  border-radius: 20px;
+                  grid-area: item1;
+                  width: 230px;
+                  height: 500px;
+               
+              }
+              
+              
+                .item2 {
+                  border-radius: 20px;
+                  grid-area: item2;
+                  width: 230px;
+                  height: 406px;
       
+                  }
+                .item3 { 
+                  border-radius: 20px;
+                  grid-area: item3;
+                  width: 230px;
+                  height: 600px;
+                  
+              }
+             
+                .item4 { 
+                  border-radius: 20px;
+                  grid-area: item4;
+                  width: 230px;
+                  height: 340px;
+      
+              }
+                .item5 {
+                  border-radius: 20px;
+                  grid-area: item5;
+                  width: 230px;
+                  height: 550px;
+      
+                  }
+              
+              } 
 
    /* tarjetas */
    .item{
