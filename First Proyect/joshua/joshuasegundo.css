@@ -1,0 +1,100 @@
+body{
+    display:flex;
+    justify-content:center;
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  }
+  
+  .container{
+    width:900px;
+    height:600px;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows:repeat(2,1fr);
+    grid-gap:8px;
+  }
+  
+  .usuario{
+    width:100%;
+    height:100%;
+   padding:5% 6% 10% 10%;
+    background-color:white;
+    color:white;
+    font-weight:700;
+    box-sizing:border-box;
+   
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  
+  }
+  .usuario p{
+    color:whitesmoke;
+    font-weight:300;
+    max-height:100%;
+    box-sizing:border-box;
+    text-align:start;
+   
+     font-size:80%;
+    line-height:1.4;
+  
+  }
+  
+  .usuario img{
+    width:1.8em;
+    height:1.8em;
+    object-fit:cover;
+    border-radius:100%;
+    border:solid 2px white;
+  }
+  
+  #uno{
+    grid-column-start:1;
+    grid-column-end:3;
+    background:url("https://www.farmasihistorie.com/w/images/3/3c/Sitat2.png");
+    
+  }
+  #uno .usuario{
+     background:url("https://static.wixstatic.com/media/885111_ac73f0fe14684a0fa4484a0caa5ed995~mv2.png/v1/fill/w_361,h_361,al_c/885111_ac73f0fe14684a0fa4484a0caa5ed995~mv2.png");
+    background-repeat:no-repeat;
+    background-size:150px;
+    background-position:right;
+    background-position-y:top;
+    background-color:#4B0082;
+  }
+  #dos .usuario{
+    background-color:#FFC72C;
+  }
+  #tres{
+    background:rgba(236, 89, 174, 0.29);
+    grid-column-start:4;
+    grid-column-end:5;
+    grid-row-start:1;
+    grid-row-end:3;
+  }
+  #tres .usuario{
+    background-color:#fd5c63;
+  }
+  #cuatro .usuario{
+    background-color:#002D62;
+  }
+  #cinco{
+    grid-column-start:2;
+    grid-column-end:4;
+  }
+  #cinco .usuario{
+    background-color:#4C516D;
+  }
+  picture{
+    width:70%;
+    margin-top:6%;
+    display:flex;
+   
+  }
+  figcaption{
+    margin-left:7%;
+    display:flex;
+    flex-direction:column;
+  }
+  span{
+    color:silver;
+  }
+  
