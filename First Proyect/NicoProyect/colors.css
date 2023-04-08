@@ -1,0 +1,28 @@
+:root {
+   
+   
+        --box-1: #733fc8;
+        --box-1-secondary:  #a775f2;
+        --text : #81858e;   
+        --box-2: #49556d; 
+        --dark-text: #52575e;
+        --box-5: #191f2d;
+        --white: white;
+        --text-2 : #b0b4be;  
+        --white-2: #e5e9f1; 
+
+
+        --box-1-dark: #191f2d;
+        --box-1-secondary-dark:  #6601ff;
+        --text-dark : #a775f2;   
+        --box-2-dark: #242834; 
+        --dark-text-dark: #959ba0;
+        --box-5-dark: #596581;
+        --white-dark: #969696;
+        --text-2-dark : #49556d;  
+        --white-2-dark: #525252; 
+
+
+    
+
+}

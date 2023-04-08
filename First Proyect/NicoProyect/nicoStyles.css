@@ -1,0 +1,515 @@
+*{
+    box-sizing: content-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 14px;
+    font-family: 'Roboto Condensed', sans-serif;
+    
+    
+}
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 35px;
+    background-color: var(--box-1);
+    border-radius: 40px;
+    cursor: pointer;
+    margin: 20px 0px 0px 20px;    
+}
+
+.switch:after{
+
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: var(--white);
+    left: 5px;
+    top: 5px;
+    transition: transform .3s ease, background-color .3s ease;
+
+}
+
+#toggle:checked ~ .switch:after{
+    transform: translateX(35px);
+    background-color: var(--white-dark);
+
+}
+
+#toggle:checked ~ .switch{
+    
+    background-color: var(--box-1-dark);
+
+}
+
+.offscreen{
+    position: absolute;
+    left: -99999999px;
+
+}
+
+
+
+
+
+
+body {
+
+    
+    background-color: var(--white-2);
+}
+
+
+
+
+.container{
+    
+    height: 100%;
+    margin: 5vh 1%;
+    
+    
+}
+
+.boxes {
+    
+    border-radius: 12px;
+    margin: 20px;
+    padding: 30px;
+    position: relative;
+    z-index: -2;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); 
+    
+    
+}
+
+.boxes .user-photo{
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+
+    
+}
+
+.boxes header{
+   
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+
+}
+
+.boxes section h2 {
+
+    margin-bottom: 15px;
+    font-weight: 600;
+    line-height: 30px;
+    
+}
+
+.boxes section span{
+    line-height: 20px;
+}
+
+.user h2{
+
+    font-size: .9rem;
+    
+}
+
+.user span {
+    font-size: .9rem;
+    font-weight: 400;
+    
+}
+
+.box-1  {
+    background-color: var(--box-1);
+    color: var(--white);
+    
+
+}
+
+#pattern-quotation{
+    
+    position: absolute;
+    top: 0;
+    right: 19px;
+    z-index: -1;
+    
+    
+
+}
+
+.box-1 span {
+    color: var(--box-1-secondary);
+    
+    
+    
+}
+
+.box-1 header img {
+    border: 3px solid var(--box-1-secondary);
+}
+
+
+
+
+.box-2 {
+    background-color: var(--box-2);
+}
+
+
+.box-2 span {
+    color: var(--text-2);
+}
+
+.box-2 header img {
+    border: 3px solid var(--text-2);
+}
+
+.box-2 h2 {
+    color: var(--white);
+}
+
+
+.box-3 {
+    background-color: var(--white);
+}
+
+
+.box-3 span {
+    color: var(--text);
+}
+
+.box-3 header img {
+    border: 3px solid var(--text-2);
+}
+
+.box-3 h2 {
+    color: var(--dark-text);
+}
+
+.box-4 {
+    background-color: var(--white);
+}
+
+
+.box-4 span {
+    color: var(--text);
+}
+
+.box-4 header img {
+    border: 3px solid var(--text-2);
+}
+
+.box-4 h2 {
+    color: var(--dark-text);
+}
+
+.box-5 {
+    background-color: var(--box-5);
+}
+
+
+.box-5 span {
+    color: var(--text);
+}
+
+.box-5 header img {
+    border: 3px solid var(--box-1);
+}
+
+.box-5 h2 {
+    color: var(--white);
+}
+
+
+
+
+ body.dark{
+
+    
+    background-color: var(--white-2-dark);
+}
+.box-1.dark {
+    background-color: var(--box-1-dark);
+}
+
+
+.box-1 span.dark{
+    color: var(--text-dark);
+}
+
+.box-1 header img  .dark{
+    border: 3px solid var(--text-dark);
+}
+
+.box-1 h2 .dark {
+    color: var(--white-dark);
+}
+
+.box-2.dark{
+    background-color: var(--box-2-dark);
+}
+
+
+.box-2 span .dark{
+    color: var(--text-2-dark);
+}
+
+.box-2 header img.dark {
+    border: 3px solid var(--text-2-dark);
+}
+
+.box-2 h2 .dark{
+    color: var(--white-dark);
+}
+
+.box-3.dark{
+    background-color: var(--box-1-dark);
+}
+
+
+.box-3 span .dark{
+    color: var(--text-dark);
+}
+
+.box-3 header img .dark{
+    border: 3px solid var(--text-2-dark);
+}
+
+.box-3 h2 .dark {
+    color: var(--dark-text-dark);
+}
+
+.box-4.dark{
+    background-color: var(--box-1-dark);
+}
+
+
+.box-4 span .dark{
+    color: var(--text-dark);
+}
+
+.box-4 header img .dark{
+    border: 3px solid var(--text-2-dark);
+}
+
+.box-4 h2 .dark{
+    color: var(--white);
+}
+
+.box-5.dark{
+    background-color: var(--box-5-dark);
+}
+
+
+.box-5 span .dark{
+    color: var(--dark-text-dark);
+}
+
+.box-5 header img .dark{
+    border: 3px solid var(--box-1-dark);
+}
+
+.box-5 h2 .dark{
+    color: var(--box-1-dark);
+}
+
+
+
+
+
+@media  screen and (min-width: 769px){
+    
+    
+    
+    body {
+
+        overflow: hidden;
+    }
+    .container{
+    
+        height: 620px;
+        margin: 30px 12%;
+        display: flex;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 50% 50%;
+      
+    }
+   
+
+    .boxes{
+        margin: 15px;
+        
+        
+        
+    }
+   
+
+    
+
+    .boxes .user-photo{
+        
+        width: 30px;
+        height: 30px;
+        margin-right: 15px;
+    
+        
+    }
+
+    .boxes header{
+   
+        margin-bottom: 10px;
+       
+    
+    }
+    .boxes section {
+
+      
+       overflow: hidden;
+       
+        
+        
+    }
+
+    .box-1 section{
+
+        max-height: 165px;
+        
+    }
+
+    .box-2 section{
+        max-height: 165px;
+    }
+
+    .box-3 section{
+       
+        max-height: 475px;
+    }
+
+    .box-4 section{
+        
+        max-height: 165px;
+    }
+    .box-5 section{
+        
+        max-height: 165px;
+    }
+
+    .boxes section h2 {
+
+        margin-bottom: 10px;
+        font-weight: 600;
+        line-height: 25px;
+        font-size: 1.3rem;
+        
+        
+    }
+    
+    .boxes section span{
+        
+        line-height: 20px;
+        font-size: .8rem;
+        
+       
+        
+    }
+    
+    .user h2{
+    
+        font-size: .9rem;
+        
+    }
+    
+    .user span {
+        font-size: .8rem;
+        font-weight: 400;
+        
+    }
+
+    
+    .box-1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+    }
+
+    .box-2 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+    }
+
+    .box-3 {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 3;
+
+    }
+
+    .box-3 section h2, .box-4 section h2  {
+        margin-bottom: 20px;
+    }
+
+    .box-4 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+
+    }
+
+    .box-5 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        
+
+    }
+
+   
+
+
+
+
+   
+
+
+
+
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
