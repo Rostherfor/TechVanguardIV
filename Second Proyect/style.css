@@ -1,0 +1,67 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+body{
+    box-sizing: border-box;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 5em;
+}
+
+/* START:Home and Header */
+.home{
+    height: 100vh;
+    width: 100vw;
+    background: cyan;
+}
+/* END:Home and Header */
+
+
+/* START:Carrusul Top Products */
+.carrusel-top-products{
+    height: 100vh;
+    width: 100vw;
+    background: gold;
+}
+/* END:Carrusel Top Products */
+
+
+/* START:Menu Dropdown */
+.menu-dropdown{
+    height: 100vh;
+    width: 100vw;
+    background: red;
+}
+/* END:Menu Dropdown */
+
+
+/* STAR:Shopping Cart */
+.shopping-cart{
+    height: 100vh;
+    width: 100vw;
+    background: greenyellow;
+}
+/* END:Shopping Cart */
+
+
+/* START:Carrusel Local */
+.carrusel-local{
+    height: 100vh;
+    width: 100vw;
+    background: purple;
+}
+/* END:Carrusel Local */
+
+
+/* START:Footer */
+.footer{
+    height: 50vh;
+    width: 100vw;
+    background: rgb(255, 0, 140);
+}
+/* END:Footer */
