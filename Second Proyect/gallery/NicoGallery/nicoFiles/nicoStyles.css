@@ -37,7 +37,7 @@
 
 .carrusel-local__border {
 
-    width: 500px;
+    width: 60%;
     height: 20px;
     border-top: 2px solid var(--third);
 }
@@ -74,7 +74,7 @@
 
 .carrusel-local__card {
 
-    height: 400px;
+    height: 80%;
     width: 2%;
     min-width: 250px;
     border-radius: 20px;
