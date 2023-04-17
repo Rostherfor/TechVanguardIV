@@ -36,6 +36,7 @@
 
 .products__content {
     flex: 1 0 auto;
+    width: 350px;
     margin: 20px;
     border-radius: 25px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -97,7 +98,7 @@
     }
 
     .products__content {
-        width: 300px;
+        width: 270px;
         scroll-snap-align: center;
     }
 
