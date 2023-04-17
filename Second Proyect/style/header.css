@@ -1,0 +1,147 @@
+
+.header-container{
+width: 100%;
+height:auto;
+border:solid 1px red;
+box-sizing: border-box;
+}
+.nav-container{
+    width:100%;
+    
+}
+.nav-container--home{
+    width:100%;
+    height:100px;
+    padding:10px 2%;
+    display: flex;
+   justify-content: space-between;
+   align-items: center; 
+    border:solid 1px green;
+    box-sizing: border-box;
+}
+.nav-container--logo{
+    width:70px;
+    height:70px;
+    background-image: url("https://img.freepik.com/vector-premium/burger-logo_1366-144.jpg?w=2000");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border:solid 1px hotpink;
+}
+.nav-container--search{
+    width:40%;
+    height:40px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: beige;
+    border: solid 2px tomato;
+    border-radius: 10px;
+    align-self: center;
+    box-sizing: border-box;
+}
+.nav-container--search input{
+    width:100%;
+    height:90%;
+    margin:0;
+    border:transparent;
+    border-radius: 10px;
+    outline: none;
+}
+
+.nav-container--search i{
+    display: none;
+}
+.nav-container--user{
+    width:40px;
+    height:40px;
+    background-color: tomato;
+    border: solid 3px tomato;
+    border-radius:100%;
+}
+.nav-container--user i{
+    font-size: 2.4rem;
+    text-align: center;
+    color:white;
+}
+.nav-container--pedido{
+    width:100%;
+    height:55px;
+    padding:5px 10px 10px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+    font-weight: bold;
+    line-height: 1.1rem;
+    background-color: #F3AD3D;
+}
+.nav-container--shopping-bag{
+    width:40px;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.nav-container--shopping-bag i{
+    font-size: 2.4rem;
+    text-align: center;
+    color:tomato;
+}
+.nav-container--shopping-bag span{
+    display: inline-block;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.nav-container--site{
+    width: 280px;
+    height:50px;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    display: none;
+}
+.nav-container--site span{
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1rem;
+    font-weight: bold;
+}
+/*
+medidas para tablet
+*/
+
+@media(min-width:768px){
+    .nav-container--logo{
+        width:90px;
+        height:90px;
+    }
+.nav-container--search{
+    width:250px;
+    background-color:white;
+}
+.nav-container--search i{
+    display: inline-block;
+    color:red;
+}
+.nav-container--shopping-bag{
+    display: flex;
+}
+}
+@media(min-width:1024px){
+    .nav-container--site{
+        display: flex;
+        text-align: center;
+    }
+    .nav-container--pedido{
+        display: none;
+    }
+}
