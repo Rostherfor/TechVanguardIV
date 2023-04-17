@@ -23,14 +23,15 @@
 
     background-color: var(--third);
     color: var(--primary);
-    padding: 5px 25px;
+    font-size: 20px;
+    padding: 10px 35px;
     border-radius: 5px;
     margin: 50px 0px 10px 0px;
 }
 
 .carrusel-local__title {
 
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 10px;
     color: var(--fourth);
 }
@@ -63,18 +64,13 @@
     height: 80%;
     width: 600%;
     margin-left: -100%;
-
-
+    position: relative;
     transition: all .5s ease;
-
-
-
-
 }
 
 .carrusel-local__card {
 
-    height: 80%;
+    height: 380px;
     width: 2%;
     min-width: 250px;
     border-radius: 20px;
@@ -154,18 +150,19 @@
 .carrusel-local__btns {
 
     position: absolute;
-    top: 65%;
-    transform: translateY(-30%);
+    top: 63%;
+   
     border: none;
     background: none;
     cursor: pointer;
+    
 
 
 }
 
 .carrusel-local__arrow {
 
-    fill: var(--fourth);
+    fill: var(--third);
 
     height: 70px;
     width: 70px;
@@ -195,6 +192,19 @@
         height: 80%;
         width: 200%;
         margin-left: -33%;
+        
 
     }
 }
+
+@media screen and (max-height: 415px){
+    
+    .carrusel-local {
+        height: 160vh;
+       
+    }
+}
+
+
+
+
