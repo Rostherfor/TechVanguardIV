@@ -1,5 +1,4 @@
 .carrusel-local {
-    height: 100vh;
     width: 100%;
     background-color: var(--primary);
 }
@@ -15,7 +14,7 @@
     justify-content: center;
     position: relative;
     overflow: hidden;
-
+    padding: 0 0 20px 0;
 
 }
 
@@ -23,21 +22,22 @@
 
     background-color: var(--third);
     color: var(--primary);
-    padding: 5px 25px;
+    font-size: 20px;
+    padding: 10px 35px;
     border-radius: 5px;
     margin: 50px 0px 10px 0px;
 }
 
 .carrusel-local__title {
 
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 10px;
     color: var(--fourth);
 }
 
 .carrusel-local__border {
 
-    width: 500px;
+    width: 60%;
     height: 20px;
     border-top: 2px solid var(--third);
 }
@@ -63,22 +63,17 @@
     height: 80%;
     width: 600%;
     margin-left: -100%;
-
-
+    position: relative;
     transition: all .5s ease;
-
-
-
-
 }
 
 .carrusel-local__card {
 
-    height: 400px;
+    height: 380px;
     width: 2%;
     min-width: 250px;
     border-radius: 20px;
-    overflow: hidden;
+     overflow: hidden; 
     position: relative;
     display: flex;
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.63);
@@ -96,7 +91,7 @@
     width: 100%;
     text-align: center;
     top: 100%;
-    height: 160px;
+    height: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -154,18 +149,19 @@
 .carrusel-local__btns {
 
     position: absolute;
-    top: 65%;
-    transform: translateY(-30%);
+    top: 63%;
+   
     border: none;
     background: none;
     cursor: pointer;
+    
 
 
 }
 
 .carrusel-local__arrow {
 
-    fill: var(--fourth);
+    fill: var(--third);
 
     height: 70px;
     width: 70px;
@@ -188,13 +184,26 @@
     left: 1%;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 991px) {
 
     .carrusel-local__cards {
 
         height: 80%;
         width: 200%;
         margin-left: -33%;
+        
 
     }
 }
+
+@media screen and (max-height: 415px){
+    
+    .carrusel-local {
+        height: 160vh;
+       
+    }
+}
+
+
+
+
