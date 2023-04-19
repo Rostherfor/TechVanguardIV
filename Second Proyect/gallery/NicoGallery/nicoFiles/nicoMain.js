@@ -13,14 +13,12 @@ carruselCards.insertAdjacentElement('afterbegin', carruselCardLast);
 let funcionSliderBig;
 let funcionSlider;
 
-if(window.innerWidth >= 769){
-    funcionSliderBig = setInterval(sliderBig, 3000);
-}
+ if(window.innerWidth >= 769){
+    funcionSliderBig = setInterval(sliderBig, 3000); }
 
-if(window.innerWidth <= 768){
-
-    funcionSlider = setInterval(slider, 3000);
-}
+ if(window.innerWidth <= 768){
+     funcionSlider = setInterval(slider, 3000);
+ }
 
 
 function sliderBig(){
