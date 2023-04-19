@@ -94,9 +94,11 @@
 
     transition: all .5s ease;
 
-
+cursor: pointer;
 
 }
+
+
 
 .carrusel-local__card:hover .carrusel-local__card--info {
 
