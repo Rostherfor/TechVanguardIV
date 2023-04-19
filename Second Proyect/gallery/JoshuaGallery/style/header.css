@@ -170,23 +170,14 @@ medidas para tablet
 */
 
 @media(min-width:991px){
-    .nav-container--logo img {
-        scale: 2;
-    }
-.nav-container--search{
-    width:250px;
-    background-color:white;
-}
-.nav-container--search i{
-    display: inline-block;
-    color:red;
-}
-.nav-container--shopping-bag{
-    display: flex;
-}
 
-}
-@media(min-width:1024px){
+    .nav-container--search{
+        width:300px;
+        background-color:var(--primary);
+    }
+    .nav-container--shopping-bag{
+        display: flex;
+    }
     .nav-container--site{
         display: flex;
         text-align: center;
@@ -196,8 +187,5 @@ medidas para tablet
     }
     .header--menu-container{
         display: none;
-    }
-    .home{
-        padding-top: 100px;
     }
 }
