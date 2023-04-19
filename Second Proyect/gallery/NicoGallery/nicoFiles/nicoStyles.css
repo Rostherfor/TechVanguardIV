@@ -113,6 +113,7 @@
     display: flex;
     width: 100px;
     justify-content: space-between;
+    
 
 
 
@@ -191,12 +192,31 @@
     }
 }
 
-@media screen and (max-height: 415px){
+/* @media screen and (max-height: 415px){
     
     .carrusel-local {
         height: 160vh;
        
+    } 
+}*/
+
+
+@media screen and (max-height: 375 ){
+    
+    .carrusel-local__cards {
+
+        display: flex;
+        align-items: center;
+    
+        flex-direction: row;
+        height: 80%;
+        width: 600%;
+        margin-left: -100%;
+        position: relative;
+        margin-bottom: 60px;
+        transition: all .5s ease;
     }
+    
 }
 
 
