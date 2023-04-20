@@ -19,7 +19,8 @@ z-index: 1000;
 }
 .nav-container--home{
     width:100%;
-    height:100px;
+    height:60px;
+    scale: .8;
     display: flex;
     justify-content: space-between;
     align-items: center; 
@@ -35,7 +36,7 @@ z-index: 1000;
 
 .nav-container--logo img {
     width: 100%;
-    scale: 1.9;
+    scale: 1.5;
 }
 
 .nav-container--search{
@@ -133,22 +134,26 @@ z-index: 1000;
 .header--menu-container{
     margin:0 auto;
     position:fixed;
+    padding: 10px;
     bottom:0;
     width:100%;
-    height:60px;
+    height:50px;
     box-sizing: border-box;
     display:grid;
     grid-template-columns:1fr 1fr 1fr 1fr;
     background-color:var(--third);
     box-shadow:  0 0 20px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
     z-index: 1000;
 }
 .menu--icono{
     width:100%;
+    height: 45%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    scale: .7;
+    scale: .6;
 }   
 .menu--icono i{
     font-size: 2.4rem;
@@ -186,6 +191,21 @@ medidas para tablet
         display: none;
     }
     .header--menu-container{
+        display: none;
+    }
+
+    .nav-container--logo img {
+        scale: 1.9;
+    }
+
+    .nav-container--home {
+        height: 100px;
+        scale: 1;
+    }
+}
+
+@media(max-height: 650px) {
+    .header--menu-container {
         display: none;
     }
 }
