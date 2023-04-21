@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Second Proyect/style.css">
+    <link rel="stylesheet" href="/Second Proyect/colors.css">
+    <link rel="stylesheet" href="/Second Proyect/gallery/JoshuaGallery/style/header.css">
+    <link rel="stylesheet" href="./mikeStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <title>TechVanguardIV</title>
+    
+</head>
+
+<body>
+    <!-- Obligatorio! = Utilizar obligatoriamente la metodología BEM⚠️
+        (video de que es la metodología BEM: https://youtu.be/6LUz0MnNCiA); -->
+
+    <!-- Intrucciones generales: Eliminar las etiquetas h1 de sus secciones y de CSS -->
+
+    <header class="header-container">
+        <nav class="nav-container">
+            <div class="nav-container--home">
+
+                <div class="nav-container--logo">
+                    <img src="/Second Proyect/gallery/JoshuaGallery/media/burger-logo.png" alt="logo.png">
+                </div>
+
+                    <div class="nav-container--search">
+                        <input type="text" placeholder="Buscar">
+                        <i class="ri-search-line"></i>
+                    </div>
+
+                    <div class="nav-container--site">
+                        <div class="site-container">
+                            <i class="ri-map-pin-line"></i>
+                            <span>Como deseas recibir tu pedido ?</span>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </div>
+                    </div>
+
+                    <a href="/Second Proyect/index.html" id="nav-container--shopping-bag">
+                        <div class="nav-container--shopping-bag">
+
+                            <div class="shopping-bag__home-container">
+                                <img src="../media/home-2-line.svg" alt="home.svg">
+                                <p>Home</p>
+                            </div>
+
+                        </div>
+                    </a>
+
+                    <div class="nav-container--user">
+                        <i class="ri-user-fill"></i>
+                    </div>
+
+                </div>
+
+                <div class="nav-container--pedido">
+                    <div class="pedido-container">
+                        <i class="ri-map-pin-line"></i>
+                        <span>Como deseas recibir tu pedido ?</span>
+                        <i class="ri-arrow-down-s-line"></i>
+                    </div>
+                </div>
+        </nav>
+            <div class="header--menu-container">
+                <div class="menu--icono">
+                    <i class="ri-home-smile-fill"></i>
+                    <span>Home</span>
+                </div>
+                <div class="menu--icono">
+                    <i class="ri-map-pin-fill"></i>
+                    <span>Direccion</span>
+                </div>
+                <div class="menu--icono">
+                    <i class="ri-suitcase-fill"></i>
+                    <span>Pedidos</span>
+                </div>
+                <div class="menu--icono">
+                    <i class="ri-shopping-bag-line"></i>
+                    <span>Carrito</span>
+                </div>
+            </div>
+
+    </header>
+
+    <main>
+        <section class="home">
+
+            <div class="home-container">
+
+                <div class="home-container__cart">
+                    <div class="home-container__cart-content">
+                        <div id="cart-content__table">
+                            <table id="cart-list">
+                                <thead>
+                                    <tr>
+                                        <th>Producto</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="empty-cart" class="btn-2">Vaciar carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home-container__pay">
+                    
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h1>Footer</h1>
+    </footer>
+
+</body>
+
+</html>
