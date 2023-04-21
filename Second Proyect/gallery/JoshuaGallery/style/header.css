@@ -1,6 +1,6 @@
 .header-container{
 width: 100%;
-height:13.5vh;
+height:100px;
 
 box-sizing: border-box;
 background-color: var(--third);
