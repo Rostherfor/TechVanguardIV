@@ -34,9 +34,7 @@ modalX.addEventListener('click', ()=>{
     modal.classList.remove('modal__open');
 });
 
-background.addEventListener('click', ()=>{
-    modal.classList.remove('modal__open');
-});
+
 
 
 sendB.addEventListener('click', (event)=>{
