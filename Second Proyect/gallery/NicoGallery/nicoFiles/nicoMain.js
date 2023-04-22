@@ -19,7 +19,7 @@ setTimeout(() => {
     
     modal.classList.add('modal__open');
    
-}, 3000);
+}, 5000);
 
 
 
@@ -27,7 +27,7 @@ setTimeout(() => {
     
     
     modalSign.style.transform = 'translate(-50%, -40%)'
-}, 3050);
+}, 5050);
 
 
 modalX.addEventListener('click', ()=>{
