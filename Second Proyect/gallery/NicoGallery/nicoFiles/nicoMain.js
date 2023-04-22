@@ -1,6 +1,68 @@
 
 
 
+let modal = document.querySelector('.modal');
+let modalX = document.querySelector('.modal__x');
+let modalSign = document.querySelector('.modal__sign');
+let sendB = document.querySelector('.modal__sendB');
+let inputName = document.querySelector('#modal__input--name');
+let inputMail = document.querySelector('#modal__input--mail');
+let background = document.querySelector('.modal');
+
+
+function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
+
+setTimeout(() => {
+    
+    modal.classList.add('modal__open');
+   
+}, 3000);
+
+
+
+setTimeout(() => {
+    
+    
+    modalSign.style.transform = 'translate(-50%, -40%)'
+}, 3050);
+
+
+modalX.addEventListener('click', ()=>{
+    modal.classList.remove('modal__open');
+});
+
+background.addEventListener('click', ()=>{
+    modal.classList.remove('modal__open');
+});
+
+
+sendB.addEventListener('click', (event)=>{
+    
+    event.preventDefault();
+    if(inputName.value.trim() === '' || inputMail.value.trim() === ''){
+
+        alert('Debes llenar todos los campos');
+        
+    }
+
+    if (!isValidEmail(inputMail.value)) {
+        alert('Por favor ingrese una dirección de correo electrónico válida');
+        return;
+      } else{
+        
+            modal.classList.remove('modal__open');
+       
+      }
+
+});
+
+ 
+
+
+
 
 const carruselCards = document.querySelector(".carrusel-local__cards");
 let carruselCard = document.querySelectorAll(".carrusel-local__card");
