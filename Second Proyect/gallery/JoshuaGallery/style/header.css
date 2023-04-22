@@ -127,6 +127,7 @@ z-index: 1000;
 .shooping-bag__container-logo-cart div span {
     color: var(--fourth);
     font-size: 13px;
+    font-weight: 600;
     margin: 0;
 }
 
