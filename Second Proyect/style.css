@@ -75,8 +75,6 @@ h1{
 
 /* START:Footer */
 .footer{
-    height: 50vh;
-    width: 100%;
     background: var(--fourth);
 }
 /* END:Footer */

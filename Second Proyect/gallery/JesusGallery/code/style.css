@@ -1,0 +1,33 @@
+.footer {
+    padding: 3em;
+    color: var(--primary);
+    height: 100%;
+}
+.footer h2{
+    text-align: center;
+    font-size: 3em;
+    margin: 1em;
+}
+.footer .mapa-contact{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+.footer .mapa-contact .mapa{
+    height: 25em;
+}
+.footer .mapa-contact .mapa > iframe{
+    width: 100%;
+    height: 100%;
+}
+.footer .mapa-contact .contactanos {
+    font-size: 20px;
+}
+.footer .mapa-contact .contactanos h3 {
+    color: var(--third);
+}
+@media screen and (max-width:767px){
+    .footer .mapa-contact{
+        flex-flow: column;
+    }
+}
