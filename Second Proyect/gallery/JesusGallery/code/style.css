@@ -5,6 +5,14 @@
     position: relative;
     z-index: 1;
 }
+.footer__line{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0 20px 25px var(--primary);
+    z-index: 10;
+}
 .footer__background{
     position: absolute;
     left: 0;
