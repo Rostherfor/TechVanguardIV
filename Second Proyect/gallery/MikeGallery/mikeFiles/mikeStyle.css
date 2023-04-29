@@ -117,7 +117,7 @@
 }
 
 .home-container__cart {
-    height: 84%;
+    height: 500px;
     width: 62.5%;
     padding: 0 0 0 5px;
     margin: 0;
@@ -127,7 +127,7 @@
 }
 
 .home-container__pay {
-    height: 37%;
+    height: 205px;
     width: 30%;
     padding: 20px;
     background: rgba(255, 255, 255, 0.30);
