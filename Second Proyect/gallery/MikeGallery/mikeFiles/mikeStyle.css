@@ -103,7 +103,7 @@
 
 .cart-home{
     padding-top: 100px;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background: var(--primary);
 }
@@ -117,7 +117,7 @@
 }
 
 .home-container__cart {
-    height: 500px;
+    height: 525px;
     width: 62.5%;
     padding: 0 0 0 5px;
     margin: 0;
@@ -127,7 +127,7 @@
 }
 
 .home-container__pay {
-    height: 205px;
+    height: 37%;
     width: 30%;
     padding: 20px;
     background: rgba(255, 255, 255, 0.30);
