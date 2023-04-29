@@ -90,16 +90,17 @@ z-index: 1000;
     background-color: var(--secondary);
 }
 
-.nav-container--shopping-bag{
-    display: flex;
+.nav-container--shopping-bag {
+    text-decoration: none;
     justify-content: center;
     align-items: center;
     display: none;
     color: var(--primary);
 }
 
-#nav-container--shopping-bag {
-    text-decoration: none;
+.nav-container--shopping-bag span{
+    font-size: 1.3rem;
+    text-align: center;
 }
 
 .shooping-bag__container-logo-cart {
@@ -131,12 +132,6 @@ z-index: 1000;
     margin: 0;
 }
 
-.nav-container--shopping-bag span{
-    display: inline-block;
-    font-size: 1.3rem;
-    text-align: center;
-    margin-top: 10px;
-}
 .nav-container--site{
     width: 280px;
     height:50px;
@@ -160,7 +155,7 @@ z-index: 1000;
     padding: 10px;
     bottom:0;
     width:100%;
-    height:50px;
+    height:55px;
     box-sizing: border-box;
     display:grid;
     grid-template-columns:1fr 1fr 1fr 1fr;
@@ -171,7 +166,7 @@ z-index: 1000;
 }
 .menu--icono{
     width:100%;
-    height: 45%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -210,7 +205,7 @@ medidas para tablet
         background-color:var(--primary);
     }
     .nav-container--shopping-bag{
-        display: flex;
+        display: block;
     }
     .nav-container--site{
         display: flex;
