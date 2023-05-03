@@ -17,6 +17,12 @@ const DECLARACION_ENVIO = document.getElementById('pay-products__envio');
 const PRECIO_TOTAL = document.getElementById('pay-products__total');
 const PAGAR_VACIO = document.getElementById('pay-content__empty');
 const PAGAR_LLENO = document.getElementById('pay-content__total');
+const PRUEBA_CARRITO = document.getElementById('shooping-bag__container-logo-cart');
+
+//  MOBILE SECCION!
+const SECTION_CART_MOBILE = document.getElementById('section-cart__mobile');
+const SECTION_HOME_MOBILE = document.getElementById('section-home__mobile');
+const CONTADOR_PRODUCTOS_MOBILE = document.getElementById('shoping-cart__span__mobile');
 //============================================================================
 
 //======================DECLARACION DE VARIABLES==============================
@@ -31,7 +37,9 @@ function cargarEventListener() {
     CARRITO.addEventListener('click', eliminarElemento);
     VACIAR_CARRITO_BTN.addEventListener('click', vaciarCarrito);
     SECTION_CART.addEventListener('click', mostrarCarrito);
+    SECTION_CART_MOBILE.addEventListener('click', mostrarCarritoMobile);
     SECTION_HOME.addEventListener('click', mostrarHome);
+    SECTION_HOME_MOBILE.addEventListener('click', mostrarHomeMobile);
 }
 
 function comprarElemento(e) {
@@ -39,7 +47,9 @@ function comprarElemento(e) {
     if(e.target.classList.contains('agregar-carrito')) {
         contador++;
         alert('SE AGREGO UN PRODUCTO A SU CARRITO! ✔');
+
         CONTADOR_PRODUCTOS.innerHTML = contador;
+        CONTADOR_PRODUCTOS_MOBILE.innerHTML = contador;
         CONTADOR_PRODUCTOS_TOTAL.innerHTML = contador;
         DECLARACION_ENVIO.innerHTML = 'FREE'
         TABLA_CARRITO.style.display = 'table';
@@ -100,7 +110,7 @@ function eliminarElemento(e) {
     if(e.target.classList.contains('material-symbols-outlined')) {
         
         e.target.parentElement.parentElement.parentElement.remove();
-        alert('SE ELIMINO UN PRODUCTO! ✔')
+        alert('SE ELIMINO UN PRODUCTO! ✔');
         elemento = e.target.parentElement.parentElement.parentElement;
         elementoId = elemento.querySelector('a').getAttribute('data-id');
         contador--;
@@ -109,11 +119,12 @@ function eliminarElemento(e) {
 
     if(contador === 0){
         TABLA_CARRITO.style.display = 'none';
-        TABLA_BACKGROUND.style.display = 'flex'
+        TABLA_BACKGROUND.style.display = 'flex';
         PAGAR_VACIO.style.display = 'block';
         PAGAR_LLENO.style.display = 'none';
     }
     CONTADOR_PRODUCTOS.innerHTML = contador;
+    CONTADOR_PRODUCTOS_MOBILE.innerHTML = contador;
     CONTADOR_PRODUCTOS_TOTAL.innerHTML = contador;
 }
 
@@ -139,9 +150,22 @@ function mostrarCarrito(){
     SECTION_PAGE_2.style.display = 'block'
 }
 
+
+
 function mostrarHome(){
     SECTION_HOME.style.display = 'none';
     SECTION_CART.style.display = 'block';
+    SECTION_PAGE_2.style.display = 'none'
+    SECTION_PAGE_1.style.display = 'block'
+}
+
+//  FUNCIONES DE VERSION MOBILE
+function mostrarCarritoMobile(){
+    SECTION_PAGE_1.style.display = 'none'
+    SECTION_PAGE_2.style.display = 'block'
+}
+
+function mostrarHomeMobile(){
     SECTION_PAGE_2.style.display = 'none'
     SECTION_PAGE_1.style.display = 'block'
 }
