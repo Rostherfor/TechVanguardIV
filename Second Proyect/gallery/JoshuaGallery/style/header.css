@@ -181,6 +181,7 @@ z-index: 1000;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
     scale: .7;
 }   
 .menu--icono i{
