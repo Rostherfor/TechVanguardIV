@@ -113,6 +113,16 @@ z-index: 1000;
     width: 100%;
 }
 
+.rotate-scale-up{
+    animation:rotate-scale-up 0.4s linear both;
+} 
+
+@keyframes rotate-scale-up{
+    0%{transform:scale(1) rotateZ(0)}
+    50%{transform:scale(2) rotateZ(180deg)}
+    100%{transform:scale(1) rotateZ(360deg)}
+}
+
 .shooping-bag__container-logo-cart div {
     position: absolute;
     inset: 0;
@@ -192,6 +202,10 @@ z-index: 1000;
 .shopping-bag__home-container {
     display: flex;
     flex-direction: column;
+}
+
+.shopping-bag__home-container i {
+    font-size: 45px;
 }
 
 /*

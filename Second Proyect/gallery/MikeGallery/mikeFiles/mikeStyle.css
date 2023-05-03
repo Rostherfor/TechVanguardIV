@@ -7,7 +7,17 @@
     background-color: var(--primary);
     height: 100%;
     position: relative;
-    z-index: 1;
+}
+
+.prueba{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: url(../media/background.png) no-repeat center;
+    background-size: cover;
+    z-index: -1;
 }
 
 .shopping_cart__title {
@@ -44,7 +54,7 @@
     flex: 1 0 auto;
     width: 300px;
     border-radius: 25px;
-    background: rgba(255, 255, 255, 0.30);
+    background: rgba(255, 255, 255, 1);
     box-shadow: 0 6px 12px 0 rgba(31, 38, 135, 0.37);
     padding-bottom: 35px;
     scale: .9;
@@ -55,8 +65,8 @@
     border-radius: 25px 25px 0 0;
     width: 100%;
     height: 250px;
-    filter: drop-shadow(8px 8px 2px rgba(0,0,0,0.6));
-    transform: tra;
+    filter: drop-shadow(10px 10px 4px rgba(0,0,0,0.6));
+    scale: .75;
 }
 
 .products__content h3 {
@@ -111,18 +121,18 @@
 .home-container {
     margin: 0 auto;
     max-width: 100%;
-    padding: 50px 50px;
+    padding: 50px;
     height: 100%;
     display: flex;
 }
 
 .home-container__cart {
-    height: 500px;
+    height: 525px;
     width: 62.5%;
     padding: 0 0 0 5px;
     margin: 0;
     overflow-y: scroll;
-    background: rgba(255, 255, 255, 0.30);
+    background: rgba(255, 255, 255, 1);
     box-shadow: 0 8px 12px 0 rgba(31, 38, 135, 0.37);
 }
 
@@ -130,7 +140,7 @@
     height: 37%;
     width: 30%;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.30);
+    background: rgba(255, 255, 255, 1);
     box-shadow: 0 8px 12px 0 rgba(31, 38, 135, 0.37);
 }
 
@@ -145,6 +155,7 @@
     justify-content: center;
     align-items: center;
 }
+
 #cart-background img {
     box-sizing: content-box;
     width: 40%;
@@ -159,7 +170,7 @@
 
 #cart-list thead th{
     background-color: var(--third);
-    padding: 10px;
+    padding: 7px;
     color: var(--primary);
 }
 
@@ -167,7 +178,7 @@
     text-align: center;
     font-weight: 600;
     letter-spacing: 1px;
-    color: var(--third);
+    color: var(--fourth);
 }
 
 .borrar {
@@ -207,7 +218,7 @@
 
     .shopping_cart__product_content {
         scroll-snap-type: x mandatory;
-        scale: .8;
+        scale: .85;
     }
 
     .products__content {
@@ -234,13 +245,41 @@
 
     .home-container{
         flex-direction: column;
+        padding: 0;
+        scale: .9;
+        margin-bottom: 10px;
     }
 
     .home-container__cart{
         margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow-y: hidden;
+    }
+
+    .home-container__pay {
         width: 100%;
     }
 
+    #cart-list {
+        height: 100%;
+    }
+
+}
+
+@media(max-width: 426px) {
+    #cart-list tbody, #cart-list thead {
+        font-size: 11px;
+    }
+
+    #cart-list thead th {
+        padding: 5px 4px;
+    }
+
+    #cart-list tbody tr td img {
+        scale: .7;
+    }
 }
 
 /* PRODUCTS CONTENT:END */
